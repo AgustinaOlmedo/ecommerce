@@ -1,0 +1,78 @@
+.logodetienda{
+    width: 30%;
+    margin-right: auto;
+}
+
+.form-control{
+    width: 400px;
+}
+.btn-outline-success {
+    color: white; /* Color del texto */
+    background-color: black; /* Color de fondo */
+    border-color: black; /* Color del borde */
+  }
+
+  .btn-outline-success:hover {
+    color: black; /* Color del texto en hover */
+    background-color: white; /* Color de fondo en hover */
+    border-color: black; /* Color del borde en hover */
+  }
+
+.search-container {
+    margin-left: auto;
+    }
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Opcional: ajusta el ancho máximo del contenedor */
+  }
+
+.container-fluid{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-body-tertiary{
+    background-color: #ffffff;
+    padding: 0%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.carteladvertencia{
+    display: block;
+    background-color: black;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.precartel{
+    padding: 4px 0;
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
