@@ -1,11 +1,23 @@
 @charset "UTF-8";
 .logodetienda {
   width: 30%;
-  margin-right: auto;
+  margin-right: 20px;
+}
+
+li {
+  border: 2px solid black; /* Borde sólido negro de 2px */
+  padding: 10px; /* Espaciado interno para separar el contenido del borde */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  background-color: #f8f9fa; /* Color de fondo opcional para mejorar la visibilidad del borde */
 }
 
 .form-control {
-  width: 400px;
+  width: 300px;
+}
+
+.Pagdondesta {
+  background-color: black;
+  color: #ffffff;
 }
 
 .btn-outline-success {
@@ -20,8 +32,17 @@
   border-color: black; /* Color del borde en hover */
 }
 
+.form-control {
+  margin-right: 10px; /* Espaciado entre el campo de búsqueda y el botón */
+}
+
+header {
+  width: 100%;
+}
+
 .search-container {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-content {
@@ -29,6 +50,23 @@
   align-items: center;
   width: 100%;
   max-width: 1200px; /* Opcional: ajusta el ancho máximo del contenedor */
+  gap: 250px;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navegacion li {
+  margin-right: 20px; /* Espaciado entre los elementos del menú */
+}
+
+.navegacion {
+  display: flex;
+  margin: 10px;
 }
 
 .container-fluid {
@@ -40,7 +78,9 @@
 .navbar {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  padding: 10px;
 }
 
 .bg-body-tertiary {
@@ -48,7 +88,7 @@
   padding: 0%;
 }
 
-header {
+nav {
   width: 100%;
   display: flex;
   flex-direction: row;
