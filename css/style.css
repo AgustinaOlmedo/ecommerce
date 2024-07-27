@@ -9,15 +9,12 @@ li {
   padding: 10px; /* Espaciado interno para separar el contenido del borde */
   border-radius: 8px; /* Bordes redondeados opcionales */
   background-color: #f8f9fa; /* Color de fondo opcional para mejorar la visibilidad del borde */
+  list-style: none;
+  text-decoration: none;
 }
 
 .form-control {
   width: 300px;
-}
-
-.Pagdondesta {
-  background-color: black;
-  color: #ffffff;
 }
 
 .btn-outline-success {
@@ -62,11 +59,18 @@ header {
 
 .navegacion li {
   margin-right: 20px; /* Espaciado entre los elementos del menú */
+  list-style: none;
+  text-decoration: none;
 }
 
 .navegacion {
   display: flex;
   margin: 10px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: black;
 }
 
 .container-fluid {
@@ -119,6 +123,10 @@ nav {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.navegacion li:hover {
+  background-color: #c7ad75;
 }
 
 /*# sourceMappingURL=style.css.map */
