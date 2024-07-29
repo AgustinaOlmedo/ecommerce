@@ -123,5 +123,23 @@
   }			
 
 .navegacion li:hover {
-  background-color: #c7ad75;
+  background-color: #b6b6b2;
+}
+#carouselExampleIndicators {
+  max-width: 800px; 
+  margin: auto; 
+}
+
+.carousel-inner {
+  width: 100%;
+  height: auto; 
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+ 
+}
+main{
+  background-image: url(../assets/fondodebotellasnegrasyblancas.png);
 }
