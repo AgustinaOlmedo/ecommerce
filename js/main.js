@@ -40,7 +40,7 @@
 // Array de bebidas (cada bebida es un objeto con nombre y precio)
 // main.js
 
-alert("Hola!, teniendo en cuenta que nuestros precios son los siguientes: Cerveza: $3500, Vino: $4000, Licor: $15000");
+alert("Hola!, teniendo en cuenta que nuestros precios son los siguientes: Cerveza: $3500, Vino: $4000, Licor: $15000, vamos a calcular el precio que necesites!");
 const bebidas = [
     { nombre: 'Cerveza', precio: 3500 },
     { nombre: 'Vino', precio: 4000 },
@@ -59,7 +59,7 @@ function solicitarEntrada() {
     let cantidad = parseInt(prompt("Introduce la cantidad:"));
     
     if (isNaN(cantidad) || cantidad <= 0) {
-        alert("Cantidad no válida. Por favor, introduce un número positivo.");
+        alert("Cantidad no válida. Por favor, introduce un número entero.");
         return;
     }
     const precioTotal = calcularPrecio(bebida.precio, cantidad);
@@ -70,4 +70,4 @@ function solicitarEntrada() {
 function calcularPrecio(precio, cantidad) {
     return precio * cantidad;
 }
-solicitarEntrada();
+
