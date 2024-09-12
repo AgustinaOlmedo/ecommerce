@@ -143,3 +143,15 @@
 main{
   background-image: url(../assets/fondodebotellasnegrasyblancas.png);
 }
+.carousel-indicators button {
+  background-color: black;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+/* Opcional: Cambiar el color del borde del botón activo */
+.carousel-indicators .active {
+  border-color: black;
+}

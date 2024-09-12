@@ -4,11 +4,25 @@
   margin-right: 20px;
 }
 
+
+
+/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+#carouselExampleIndicators {
+  margin-bottom: 20px; 
+}
+
 li {
-  border: 2px solid black; /* Borde sólido negro de 2px */
-  padding: 10px; /* Espaciado interno para separar el contenido del borde */
-  border-radius: 8px; /* Bordes redondeados opcionales */
-  background-color: #f8f9fa; /* Color de fondo opcional para mejorar la visibilidad del borde */
+  border: 2px solid black; 
+  padding: 10px; 
+  border-radius: 8px; 
+  background-color: #f8f9fa; 
   list-style: none;
   text-decoration: none;
 }
@@ -18,19 +32,19 @@ li {
 }
 
 .btn-outline-success {
-  color: white; /* Color del texto */
-  background-color: black; /* Color de fondo */
-  border-color: black; /* Color del borde */
+  color: white; 
+  background-color: black; 
+  border-color: black; 
 }
 
 .btn-outline-success:hover {
-  color: black; /* Color del texto en hover */
-  background-color: white; /* Color de fondo en hover */
-  border-color: black; /* Color del borde en hover */
+  color: black; 
+  background-color: white; 
+  border-color: black; 
 }
 
 .form-control {
-  margin-right: 10px; /* Espaciado entre el campo de búsqueda y el botón */
+  margin-right: 10px;
 }
 
 header {
@@ -46,7 +60,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Opcional: ajusta el ancho máximo del contenedor */
+  max-width: 1200px; 
   gap: 250px;
 }
 
@@ -58,7 +72,7 @@ header {
 }
 
 .navegacion li {
-  margin-right: 20px; /* Espaciado entre los elementos del menú */
+  margin-right: 20px; 
   list-style: none;
   text-decoration: none;
 }
@@ -82,8 +96,8 @@ header {
 .navbar {
   background-color: #ffffff;
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  justify-content: space-between; 
   padding: 10px;
 }
 
@@ -147,5 +161,37 @@ nav {
 main {
   background-image: url(../assets/fondodebotellasnegrasyblancas.png);
 }
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 8 8'%3e%3cpath d='M3.707.293a1 1 0 0 1 1.414 1.414L2.414 4l2.707 2.707a1 1 0 1 1-1.414 1.414L0 4l3.707-3.707z' fill='%23000'/%3e%3c/svg%3e");	
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 8 8'%3e%3cpath d='M4.293 7.707a1 1 0 0 1-1.414-1.414L5.586 4 2.879 1.293A1 1 0 1 1 4.293-.707L8 4l-3.707 3.707z' fill='%23000'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+}
+#botonDeCalculo {
+  background-color: #000000; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+#botonDeCalculo:hover {
+  background-color: #773931; 
+  transform: scale(1.05);
+}
+  #botonDeCalculo:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(177, 45, 45, 0.5); 
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
