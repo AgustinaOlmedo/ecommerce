@@ -34,13 +34,6 @@
 //          } while (preferencia !== "bebidas con alcohol" && preferencia !== "bebidas sin alcohol");
 //         }
 
-
-// main.js
-
-// Array de bebidas (cada bebida es un objeto con nombre y precio)
-// main.js
-
-alert("Hola!, teniendo en cuenta que nuestros precios son los siguientes: Cerveza: $3500, Vino: $4000, Licor: $15000, vamos a calcular el precio que necesites!");
 const bebidas = [
     { nombre: 'Cerveza', precio: 3500 },
     { nombre: 'Vino', precio: 4000 },
@@ -50,7 +43,7 @@ const bebidas = [
 function solicitarEntrada() {
     let bebidaSeleccionada = prompt("Selecciona una bebida (Cerveza, Vino, Licor):");
     
-    const bebida = bebidas.find(b => b.nombre.toLowerCase() === bebidaSeleccionada.toLowerCase());
+    const bebida = bebidas.find(b => b.nombre.toLowerCase().trim() === bebidaSeleccionada.toLowerCase().trim());
     if (!bebida) {
         alert("Bebida no válida. Por favor, selecciona una bebida de la lista.");
         return;
@@ -59,9 +52,10 @@ function solicitarEntrada() {
     let cantidad = parseInt(prompt("Introduce la cantidad:"));
     
     if (isNaN(cantidad) || cantidad <= 0) {
-        alert("Cantidad no válida. Por favor, introduce un número entero.");
+        alert("Cantidad no válida. Por favor, introduce un número entero positivo.");
         return;
     }
+
     const precioTotal = calcularPrecio(bebida.precio, cantidad);
 
     alert(`El precio total para ${cantidad} ${bebida.nombre}(s) es: $${precioTotal.toFixed(2)}`);
@@ -71,3 +65,4 @@ function calcularPrecio(precio, cantidad) {
     return precio * cantidad;
 }
 
+document.getElementById('botonDeCalculo').addEventListener('click', solicitarEntrada);
